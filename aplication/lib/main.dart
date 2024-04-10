@@ -87,8 +87,7 @@ class HomePage extends StatelessWidget{
         )
 
       ),
-      appBar: AppBar(title: Text("Professor online"),centerTitle: true, backgroundColor: Color.fromARGB(255, 0, 196, 75),
-      ),
+      appBar: AppBar(title: Text("Professor online"),centerTitle: true, backgroundColor: Color.fromARGB(255, 96, 216, 132),),
       body: Container(
         color: Color.fromARGB(255, 255, 255, 255), 
         child: Column(
@@ -103,15 +102,16 @@ class HomePage extends StatelessWidget{
       height: 75,
       width: double.infinity,
       color: Color.fromARGB(255, 96, 216, 204),
+      padding: EdgeInsets.fromLTRB(0,0,0,0),
       child:
       Text("Professor online SEDUC",style: TextStyle(color: Color.fromRGBO(29, 70, 64, 1),fontSize: 24),),alignment: Alignment.center,
        
     ),
     Container(
-      height: 20,
+      height: 30,
       width: double.infinity,
-      color: Color.fromARGB(255, 96, 216, 204),
-      transformAlignment: FractionalOffset.topCenter,
+      color: Color.fromARGB(179, 96, 216, 204),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child:
       Text("O portal do professor da rede estadual!",style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1),fontSize: 16),),alignment: Alignment.center,
        
