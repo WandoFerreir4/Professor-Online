@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:aplication/segundatela.dart';
 
 void main() {
-  runApp(Mainpage());
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        "/": (context) => MyHomePage(),
+        "/2":(context) => Mainpage()
+      },
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -109,7 +116,7 @@ class MyHomePage extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/second_route');
+                        Navigator.pushNamed(context, '/2');
                       },
                     ),
                   ),

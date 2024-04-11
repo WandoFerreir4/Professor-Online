@@ -10,9 +10,7 @@ void main() {
 class Mainpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(backgroundColor: Color.fromARGB(255, 38, 119, 108),
           title: Container(
             width: double.infinity,
@@ -206,8 +204,6 @@ class Mainpage extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
+        ),);
   }
 }
