@@ -130,9 +130,11 @@ class Mainpage extends StatelessWidget {
                 child: Row(
                 children: [
                 Text('Desenvolvido por: \nSEDUC Ceará / ASTIN III'),
-                SizedBox(width: 20,),
-                Icon(Icons.facebook),SizedBox(width: 10,),
-                Image(image: Image.network("https://harassousavaz.com.br/wp-content/uploads/2018/01/instagram-icon-white-on-black-circle-1.png"),),
+        
+                Icon(Icons.facebook,color: Color.fromARGB(255, 75, 75, 75),),SizedBox(width: 5,),
+                Image.network("https://cdn-icons-png.flaticon.com/512/2175/2175198.png",color: Color.fromARGB(255, 75, 75, 75),height: 23.5),
+                SizedBox(width: 5,),
+                Image.network("https://cdn.icon-icons.com/icons2/2428/PNG/512/twitter_black_logo_icon_147062.png",height: 20,color: Color.fromARGB(255, 75, 75, 75),),
               
                 
                 ]
