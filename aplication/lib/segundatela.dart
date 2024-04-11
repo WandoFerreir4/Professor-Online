@@ -109,7 +109,7 @@ class Mainpage extends StatelessWidget {
               ),
               ListTile(
                 leading: Icon(Icons.exit_to_app),
-                title: Text('Sair da Conta'),
+                title: TextButton(onPressed: ()=>{Navigator.pushNamed(context, '/')}, child: Text("Sair da conta"),),
                 iconColor: Color.fromARGB(255, 38, 119, 108),
                 textColor: Color.fromARGB(255, 38, 119, 108),
               )
